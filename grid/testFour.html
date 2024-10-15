@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            /* border: 1px solid; */
+            width: 38%;
+            height: 280px;
+            margin: auto;
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            grid-template-areas: "A A B B" "C D D D" "E E E E";
+            /* padding: 20px; */
+        }
+
+        .main div {
+            background-color: silver;
+            border-radius: 12px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .main>div:nth-child(1) {
+            /* border: 1px solid red; */
+            padding-top: 12px;
+            grid-area:  A;
+        }
+
+        .main>div:nth-child(2) {
+            /* border: 1px solid red; */
+            grid-area: B;
+        }
+
+        .main>div:nth-child(3) {
+            /* border: 1px solid red; */
+            grid-area: C;
+        }
+
+        
+        .main>div:nth-child(4) {
+            /* border: 1px solid red; */
+            grid-area: D;
+        }
+
+        .main>div:nth-child(5) {
+            /* border: 1px solid red; */
+            grid-area: E;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+        <div class="main">
+
+            <div>
+                A
+            </div>
+
+            <div>
+                B
+            </div>
+
+            <div>
+                C
+            </div>
+
+            <div>
+                D
+            </div>
+
+            <div>
+                E
+            </div>
+
+         
+
+          
+
+        </div>
+        
+  
+    
+</body>
+</html>

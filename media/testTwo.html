@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav {
+            width: 97%;
+            height: 60px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        .main {
+            width: 97%;
+            /* border: 1px solid red; */
+            /* height: 480px; */
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .left {
+            width: 73%;
+            /* border: 1px solid black; */
+            height: 450px;
+            background-color: red;
+        }
+
+        .right {
+            width: 22%;
+            height: 480px;
+            /* border: 1px solid bisque; */
+            /* background-color: rebeccapurple; */
+            display: grid;
+        }
+
+        .subRight {
+            /* border: 1px solid brown; */
+            height: 128px;
+            width: 100%;
+            background-color: greenyellow;
+            
+        }
+
+        /* for tablet */
+
+        @media all and (min-width : 480px) and (max-width : 768px) {
+
+            .left {
+                width: 100%;
+                height: 320px;
+            }
+
+            .main {
+                display: block;
+            }
+
+            
+            .right {
+                margin-top: 20px;
+                display: flex;
+                gap: 25px;
+                width: 100%;
+            }
+        } 
+
+        /* for mobile */
+
+        @media all and (min-width : 320px) and (max-width : 480px) {
+
+            
+            .main {
+                display: block;
+            }
+
+            .left {
+                width: 100%;
+                height: 180px;
+                padding-bottom:20px;
+            }
+
+            .right {
+                margin-top: 20px;
+                gap: 12px;
+                width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <h1>NAVIGATION</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+            <h1>
+                left box
+            </h1>
+        </div>
+
+        <div class="right">
+
+            <div class="subRight">
+                <h1>1</h1>
+            </div>
+
+            <div class="subRight">
+                <h1>2</h1>
+            </div>
+
+            <div class="subRight">
+                <h1>3</h1>
+            </div>
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <input type="text" id="weigth" placeholder="enter weight">
+            <br>
+            <input type="text" id="height" placeholder="enter height">
+            <br>
+            <button onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script>
+
+    function submit() {
+
+        let wet = document.getElementById("weigth").value
+        let hei = document.getElementById("height").value
+
+        
+        const bmi = ((wet) / (hei * hei))*10000
+
+        console.log(bmi);
+
+        if (bmi <= 18.4) {
+            alert("UnderWeight")
+        }
+
+        if (bmi >= 18.5 && bmi <= 24.9) {
+            alert("Normal Weight")
+        }
+
+        if (bmi >= 25 && bmi <= 29.9) {
+            alert("Overweight")
+        }
+
+        if (bmi >= 30) {
+            alert("Obese")
+        }
+
+
+    }
+
+
+
+</script>
+
+</html>

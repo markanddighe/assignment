@@ -1,0 +1,378 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .banner {
+            /* border: 1px solid red; */
+            width: 90%;
+            /* height: 280px; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        .bannerCon {
+            /* border: 1px solid; */
+            /* width: 35%; */
+            /* height: 280px; */
+            color: white;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .bannerImage>img {
+            width: 100%;
+            height: 230px;
+        }
+
+        .serviceSection {
+            /* border: 1px solid blue; */
+            width: 90%;
+            height: auto;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .serviceSection>div>img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .serviceSectionChild {
+            /* border: 1px solid red; */
+            width: 16%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .serviceSectionChild>h3 {
+            text-align: center;
+        }
+
+        .serviceSectionChild>p {
+            text-align: center;
+        }
+
+        .workPara {
+            /* padding-top: 30px; */
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        .workSection {
+            /* border: 1px solid red; */
+            width: 90%;
+            /* height: 680px; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 50px;
+        }
+
+        .workSection>div>img {
+            width: 100%;
+        }
+
+        .workSectionChild {
+            /* border: 1px solid pink; */
+            width: 100%;
+            /* height: 320px; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        .workSectionChild>h4 {
+            padding-left: 12px;
+        }
+
+        .workSectionChild>p {
+            padding-left: 12px;
+        }
+
+
+
+        /* banner media for tablet section  start*/
+        @media all and (min-width : 480px) and (max-width : 768px) {
+            .banner {
+                width: 100%;
+                display: block;
+                /* flex-direction: column; */
+                padding-top: 12px;
+            }
+
+            .bannerCon {
+                color: white;
+                font-size: 20px;
+                padding-left: 20px;
+                line-height: 0.1;
+                text-align: center;
+            }
+
+            .bannerImage>img {
+                width: 60%;
+                height: 150px;
+                margin-top: 28px;
+            }
+
+            .bannerImage {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        /* banner media for tablet section  end*/
+
+
+        /* service section for tablet start */
+        @media all and (min-width : 480px) and (max-width : 768px) {
+            .serviceSection {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+            }
+
+            .serviceSectionChild {
+                width: 100%;
+            }
+        }
+
+        /* service section for tablet end */
+
+
+
+
+        /* work section for tablet start */
+        @media all and (min-width : 480px) and (max-width : 768px) {
+
+            .workPara {
+
+                margin-top: 50;
+            }
+        }
+
+        @media all and (min-width : 480px) and (max-width : 768px) {
+
+            .workSection {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        /* work section for tablet end */
+
+
+
+        /* banner media for mobile section  start*/
+
+        @media all and (min-width : 320px) and (max-width : 479px) {
+
+            .banner {
+                width: 100%;
+                display: block;
+                padding-top: 12px;
+            }
+
+            .bannerCon {
+                color: white;
+                font-size: 15px;
+                /* padding-left: 18px; */
+                line-height: 0.1;
+                text-align: center;
+            }
+
+            .bannerImage>img {
+                width: 60%;
+                height: 100px;
+                margin-top: 28px;
+            }
+
+            .bannerImage {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        /* banner media for mobile section  end*/
+
+
+        /* service for mobile section  start*/
+        @media all and (min-width : 320px) and (max-width : 479px) {
+            .serviceSection {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+            }
+
+            .serviceSectionChild {
+                width: 100%;
+            }
+        }
+
+        /* service for mobile section  end*/
+
+
+
+        /* work section for mobile start */
+        @media all and (min-width : 320px) and (max-width : 479px) {
+
+            .workPara {
+
+                margin-top: 50;
+            }
+        }
+
+        @media all and (min-width : 320px) and (max-width : 479px) {
+
+            .workSection {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+        }
+
+        /* work section for mobile end */
+    </style>
+</head>
+
+<body>
+
+    <!-- banner section start -->
+    <div class="banner">
+        <div class="bannerCon">
+            <h3>You are in safe hand</h3>
+            <h5>Choose the expertsin end to end surgical care</h5>
+            <button>Know More</button>
+        </div>
+
+        <div class="bannerImage">
+            <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="">
+        </div>
+
+    </div>
+    <!-- banner section end -->
+
+
+
+    <!-- service section start -->
+    <div class="serviceSection">
+
+        <div class="serviceSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt="">
+            <h3>Instant Video <br> Consultation</h3>
+            <p>Connect within 60 Secs</p>
+        </div>
+
+        <div class="serviceSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt="">
+            <h3>Instant Video <br> Consultation</h3>
+            <p>Connect within 60 Secs</p>
+        </div>
+
+        <div class="serviceSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt="">
+            <h3>Instant Video <br> Consultation</h3>
+            <p>Connect within 60 Secs</p>
+        </div>
+
+        <div class="serviceSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt="">
+            <h3>Instant Video <br> Consultation</h3>
+            <p>Connect within 60 Secs</p>
+        </div>
+
+        <div class="serviceSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt="">
+            <h3>Instant Video <br> Consultation</h3>
+            <p>Connect within 60 Secs</p>
+        </div>
+
+        <div class="serviceSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt="">
+            <h3>Instant Video <br> Consultation</h3>
+            <p>Connect within 60 Secs</p>
+        </div>
+
+    </div>
+    <!-- service section end -->
+
+
+
+    <!-- work section start -->
+    <div class="workPara">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>find experienced doctors across all specialties</p>
+    </div>
+
+
+    <div class="workSection">
+
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+
+
+
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+
+        <div class="workSectionChild">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h4>Dentist</h4>
+            <p>Teething trubles ? Schedule a dental Checkup</p>
+        </div>
+    </div>
+    <!-- work section end -->
+
+
+
+
+</body>
+
+</html>
