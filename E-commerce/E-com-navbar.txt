@@ -1,0 +1,13 @@
+Instructions
+
+continue with prvious project or assignmnet (ls assignmnent)
+
+Create a Navbar which looks similar to - navbar
+Link all pages which you built yesterday
+Signup page
+Login page
+Mens page
+Women's Page
+On clicking on each link, you should get redirected to that particular page.
+Also see if user is authenticated or not, if user is not logged in, he shouldn't be able to go to products page (men's or women's)
+User should able to see products only if he is logged in, else redirect user to login page

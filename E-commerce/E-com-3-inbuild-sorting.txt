@@ -1,0 +1,11 @@
+Instructions
+Note : This question is continuation of previous E commerce assignment
+
+Go to both mens.html and womens.html and add sorting functionality
+Sort by Price
+High to low
+Low to high
+Sort by Name
+Ascending
+Descending
+Filter by Category ( to achieve this add a key called brand in men's and women's data object)

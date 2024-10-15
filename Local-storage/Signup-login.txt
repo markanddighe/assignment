@@ -1,0 +1,12 @@
+Instructions
+
+Signup and Login
+Create a simple sign-up and login page
+
+The input fields should be email, phone number, and password only.
+Add appropriate HTML input types.
+Once the user Submits the input data store that data in local storage .
+Once they are successfully signed up, give an option of login.
+If user filled in wrong credentials, an alert should be shown .
+Let them enter email and password, match that entered data with local storage data you stored while signing up. If data matches, show an alert of login successful.
+

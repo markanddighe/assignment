@@ -1,0 +1,22 @@
+Instructions
+Creating Product Pages
+
+Create a file mens.html
+Get the data from here in JS section codepen
+"https://codepen.io/vchandu111/pen/oNpOJOE"
+
+map the data in form of cards, see the image for reference
+
+Each row should have 4 cards
+Each card should have a button with name "Add to Cart"
+
+Create another file womens.html
+Get the data from here in JS section codepen
+"https://codepen.io/vchandu111/pen/popBqXj"
+
+
+map the data in form of cards, see the image for reference
+mens.png
+
+Each row should have 4 cards
+Each card should have a button with name "Add to Cart"
