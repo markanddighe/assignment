@@ -1,4 +1,0 @@
-Instructions
-Build the layout which looks similar to given image using HTML and CSS, no need to use any javascript
-
-
