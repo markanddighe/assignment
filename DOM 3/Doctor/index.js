@@ -6,8 +6,10 @@ form.addEventListener("submit", displayData)
 
 
 
-let array = []
+let array = JSON.parse(localStorage.getItem("Details")) ||  []
 console.log(array);
+
+getDetails(array)
 
 
 
@@ -37,6 +39,8 @@ function displayData(event) {
 
 
     array.push(data)
+
+    localStorage.setItem("Details", JSON.stringify(array))
 
     getDetails(array)
 

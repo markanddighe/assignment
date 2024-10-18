@@ -5,7 +5,10 @@ let tbody = document.querySelector("tbody")
 
 form.addEventListener("submit", showData)
 
-let array = []
+let array = JSON.parse(localStorage.getItem("DetailsEmployee")) || []
+
+getDetails(array)
+
 
 function showData(event) {
 
@@ -32,6 +35,8 @@ function showData(event) {
     }
 
     array.push(data)
+
+    localStorage.setItem("DetailsEmployee", JSON.stringify(array))
 
     getDetails()
 
